@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Reverie: a tunnel that never ends</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Familjen+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<canvas id="c" aria-label="A hypnotic, endlessly zooming kaleidoscope tunnel rendered with a WebGL shader. Move the pointer to bend it, click to change its symmetry."></canvas>
+<div id="err">WebGL isn't available in this browser, so Reverie can't render.</div>
+<div class="hud">
+  <div><h1>Reverie</h1><p>A tunnel that never ends. Move to bend it. Tap to change the symmetry.</p></div>
+  <div class="btns">
+    <button id="pal">Palette</button>
+    <button id="save">Save PNG</button>
+  </div>
+</div>
+<script src="js/shaders.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

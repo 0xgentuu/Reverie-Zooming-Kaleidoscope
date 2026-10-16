@@ -1,0 +1,13 @@
+:root{--bg:#04040a;--ink:#f4f1ff;--dim:rgba(244,241,255,.72);box-sizing:border-box}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;background:var(--bg);color:var(--ink);overflow:hidden;font-family:"Familjen Grotesk",system-ui,sans-serif}
+canvas{position:fixed;inset:0;width:100%;height:100%;touch-action:none;cursor:crosshair}
+.hud{position:fixed;left:0;right:0;bottom:0;display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap;padding:20px 24px calc(20px + env(safe-area-inset-bottom,0px));pointer-events:none;text-shadow:0 1px 20px rgba(0,0,0,.7)}
+h1{margin:0;font:italic 400 clamp(3rem,10vw,7rem)/.85 "Instrument Serif",Georgia,serif;letter-spacing:-.03em}
+p{margin:.7rem 0 0;max-width:36ch;font-size:.95rem;line-height:1.45;color:var(--dim)}
+.btns{display:flex;gap:8px;pointer-events:auto}
+button{font:600 .9rem "Familjen Grotesk",sans-serif;color:var(--ink);background:rgba(0,0,0,.38);border:1px solid rgba(255,255,255,.28);border-radius:999px;padding:10px 16px;cursor:pointer;backdrop-filter:blur(8px)}
+button:hover{background:rgba(255,255,255,.18)}
+button:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+#err{position:fixed;inset:0;display:none;place-items:center;padding:24px;text-align:center}
+@media(max-width:560px){.btns{width:100%}.btns button{flex:1}}
